@@ -1,0 +1,47 @@
+:root{
+    --stale_300: hsl(212, 45%, 89%);
+    --stale_500: hsl(216, 15%, 48%);
+    --stale_900: hsl(218, 44%, 22%);
+
+    --p_size: 15px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    font-size: var(--p_size);
+    background-color: var(--stale_300);
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+article > img, article > p, article > h3{
+    margin: 10px;
+}
+
+article > img{
+    width: 100%;
+    
+}
