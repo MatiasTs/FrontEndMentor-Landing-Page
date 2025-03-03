@@ -1,3 +1,18 @@
+@media(min-width: 1440px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        
+        width: 21em;
+        
+
+        
+    }
+}
+
 @font-face {
     font-family: "Outfit";
     src: url(fonts/Outfit/static/Outfit-Bold.ttf) format('truetype');
@@ -16,7 +31,7 @@
     --stale_500: hsl(216, 15%, 48%);
     --stale_900: hsl(218, 44%, 22%);
 
-    --p_size: 16px;
+    --p_size: 15px;
 }
 
 
@@ -30,7 +45,7 @@
 body{
     font-size: var(--p_size);
     background-color: var(--stale_300);
-    padding: 0 20px;
+    padding: 0 25px;
     font-family: 'Outfit';
     text-align: center;
 }
@@ -40,7 +55,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
 
 article{
@@ -72,4 +86,5 @@ article > p {
     
     font-weight: 400;
     color: var(--stale_500);
+    padding-bottom: 20px;
 }
