@@ -1,10 +1,25 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(fonts/Outfit/static/Outfit-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(fonts/Outfit/static/Outfit-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+
 :root{
     --stale_300: hsl(212, 45%, 89%);
     --stale_500: hsl(216, 15%, 48%);
     --stale_900: hsl(218, 44%, 22%);
 
-    --p_size: 15px;
+    --p_size: 16px;
 }
+
+
 
 *{
     padding: 0px;
@@ -16,7 +31,8 @@ body{
     font-size: var(--p_size);
     background-color: var(--stale_300);
     padding: 0 20px;
-    font-family: sans-serif;
+    font-family: 'Outfit';
+    text-align: center;
 }
 
 .main{
@@ -32,9 +48,9 @@ article{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5%;
 }
 
 article > img, article > p, article > h3{
@@ -43,5 +59,17 @@ article > img, article > p, article > h3{
 
 article > img{
     width: 100%;
+    border-radius: 5%;
+    margin-bottom: 20px;
+}
+
+article > h2 {
+    font-weight: 700;
+    color: var(--stale_900);
+}
+
+article > p {
     
+    font-weight: 400;
+    color: var(--stale_500);
 }
