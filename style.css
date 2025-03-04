@@ -53,6 +53,7 @@ body {
     border-radius: 10px;
     width: 21em;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
 }
 
 /* Elementos de la tarjeta */
@@ -73,6 +74,7 @@ body {
     color: var(--stale-500);
     padding-bottom: 20px;
     font-size: 1em;
+    margin-top: 15px;
 }
 
 /* Media query para pantallas grandes */
