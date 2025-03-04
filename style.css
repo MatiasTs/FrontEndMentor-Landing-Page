@@ -15,15 +15,10 @@
     --stale-300: hsl(212, 45%, 89%);
     --stale-500: hsl(216, 15%, 48%);
     --stale-900: hsl(218, 44%, 22%);
-    --p-size: 15px;
+    --p-size: 0.9375rem;
 }
 
-/* Reset */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 /* Estilos generales */
 body {
@@ -31,7 +26,7 @@ body {
     background-color: var(--stale-300);
     font-family: 'Outfit', sans-serif;
     text-align: center;
-    padding: 0 25px;
+    padding: 16px;
 }
 
 /* Contenedor principal */
@@ -39,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Tarjeta QR */
@@ -51,16 +46,18 @@ body {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    width: 21em;
+    max-width: 20rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     
 }
 
 /* Elementos de la tarjeta */
 .qr-card__image {
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
+    display: block;
+    height: auto;
 }
 
 .qr-card__title {
@@ -70,18 +67,8 @@ body {
 }
 
 .qr-card__description {
-    font-weight: 400;
     color: var(--stale-500);
     padding-bottom: 20px;
     font-size: 1em;
     margin-top: 15px;
-}
-
-/* Media query para pantallas grandes */
-@media (min-width: 1440px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
