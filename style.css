@@ -1,18 +1,3 @@
-@media(min-width: 1440px){
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .main{
-        
-        width: 21em;
-        
-
-        
-    }
-}
-
 @font-face {
     font-family: "Outfit";
     src: url(fonts/Outfit/static/Outfit-Bold.ttf) format('truetype');
@@ -25,66 +10,76 @@
     font-weight: 400;
 }
 
-
-:root{
-    --stale_300: hsl(212, 45%, 89%);
-    --stale_500: hsl(216, 15%, 48%);
-    --stale_900: hsl(218, 44%, 22%);
-
-    --p_size: 15px;
+/* Variables */
+:root {
+    --stale-300: hsl(212, 45%, 89%);
+    --stale-500: hsl(216, 15%, 48%);
+    --stale-900: hsl(218, 44%, 22%);
+    --p-size: 15px;
 }
 
-
-
-*{
-    padding: 0px;
-    margin: 0px;
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-
-body{
-    font-size: var(--p_size);
-    background-color: var(--stale_300);
-    padding: 0 25px;
-    font-family: 'Outfit';
+/* Estilos generales */
+body {
+    font-size: var(--p-size);
+    background-color: var(--stale-300);
+    font-family: 'Outfit', sans-serif;
     text-align: center;
+    padding: 0 25px;
 }
 
-.main{
+/* Contenedor principal */
+.qr-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-article{
+/* Tarjeta QR */
+.qr-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 10px;
+    width: 21em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-article > img, article > p, article > h3{
-    margin: 10px;
-}
-
-article > img{
+/* Elementos de la tarjeta */
+.qr-card__image {
     width: 100%;
-    border-radius: 5%;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
-article > h2 {
+.qr-card__title {
     font-weight: 700;
-    color: var(--stale_900);
+    color: var(--stale-900);
+    font-size: 1.3em;
 }
 
-article > p {
-    
+.qr-card__description {
     font-weight: 400;
-    color: var(--stale_500);
+    color: var(--stale-500);
     padding-bottom: 20px;
+    font-size: 1em;
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1440px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
